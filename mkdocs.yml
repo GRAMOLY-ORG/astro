@@ -4,7 +4,7 @@ theme:
   name: 'material'
 
   features:
-    - navigaton.tabs
+    - navigation.tabs
 
   # 404 page
   static_templates:
