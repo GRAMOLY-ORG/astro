@@ -1,7 +1,10 @@
-site_name: AstroSite
+site_name: GRAMOLY Astronomy
 
 theme:
   name: 'material'
+
+  features:
+    - navigaton.tabs
 
   # 404 page
   static_templates:
@@ -47,6 +50,10 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.arithmatex:
       generic: true
+  - attr_list
+  - md_in_html
+  - pymdownx.tabbed:
+      alternate_style: true
 
 extra_javascript:
   - javascripts/mathjax.js
@@ -55,4 +62,9 @@ extra_javascript:
 
 nav:
   - Home: index.md
-  - 'Getting Started.md'
+  - Celestial Mechanics:
+    - Getting Started: orbital/index.md
+    - Basics:
+          - 'orbital/universal_gravitation.md'
+          - 'orbital/conservation_of_quantities.md'
+          - 'orbital/trajectory_of_particle.md'
